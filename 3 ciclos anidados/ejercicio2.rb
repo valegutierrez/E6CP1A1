@@ -21,6 +21,22 @@ Generar el código para imprimir la siguiente tabla:
     <td> 11 </td>
     <td> 12 </td>
   </tr>
-  <tbody>
+ </tbody>
  </table>
 =end
+puts "<table>\n<tbody>\n<tr>"
+4.times do |i|
+  i += 1
+  puts "<td> #{i} </td>"
+end
+puts "</tr>\n<tr>"
+4.times do |i|
+  i += 5
+  puts "<td> #{i} </td>"
+end
+puts "</tr>\n<tr>"
+4.times do |i|
+  i += 9
+  puts "<td> #{i} </td>"
+end
+puts "</tr>\n</tbody>\n</table>"
